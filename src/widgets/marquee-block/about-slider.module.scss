@@ -1,0 +1,21 @@
+.aboutSlider {
+  margin-bottom: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+
+
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-right: 40px;
+    height: fit-content;
+    overflow: visible;
+
+    .text {
+      font-size: 70px;
+      line-height: 100%;
+      font-weight: 600;
+    }
+  }
+}

@@ -45,8 +45,8 @@ export const CardProject = ({ desciption, img, tags, title }: Props) => {
           <h3 className={css.title}>{title}</h3>
           <p className={css.description}>{desciption}</p>
           <div className={css.tags}>
-            {tags.map((tag) => (
-              <a key={tag.title} href={tag.url}>
+            {tags.map((tag, index) => (
+              <a key={index} className={css.tag} href={tag.url}>
                 {tag.title}
               </a>
             ))}

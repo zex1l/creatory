@@ -2,11 +2,7 @@ import type { Metadata } from 'next';
 import { Raleway } from 'next/font/google';
 import './globals.css';
 import { MainProvider } from '@/shared/providers/main.provider';
-
-// const ralewayFont = Raleway({
-//   variable: '--font-raleway-sans',
-//   subsets: ['latin'],
-// });
+import '@/shared/scss/swiper.scss';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
