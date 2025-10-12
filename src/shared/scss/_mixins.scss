@@ -1,0 +1,15 @@
+@use "./breakpoints" as breakpoints;
+@use "sass:map";
+
+
+@mixin breakpoint($bp, $rule: min-width) {
+  @media screen and (#{$rule}: map.get(breakpoints.$grid-breakpoints, $bp)) {
+    @content;
+  }
+}
+
+@mixin max-breakpoint($bp, $rule: max-width) {
+  @media screen and (#{$rule}: (map.get(breakpoints.$grid-breakpoints, $bp) - 1)) {
+    @content;
+  }
+}

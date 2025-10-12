@@ -1,0 +1,39 @@
+@use '@/shared/scss/index' as helpers;
+
+.projects {
+
+  position: relative;
+  z-index: var(--z-index-prjects);
+  background-color: var(--white);
+  padding-top: 100px;
+  padding: 100px 20px 100px 20px;
+
+  @include helpers.breakpoint(desktopM) {
+    padding: 100px 40px 0 40px;
+    margin: 0 auto;
+  }
+
+  .header {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    .title {
+      line-height: 46px;
+    }
+  }
+
+  .blocks {
+
+    display: flex;
+    flex-wrap: wrap;
+
+
+    row-gap: 30px;
+    column-gap: 20px;
+  }
+
+
+}
