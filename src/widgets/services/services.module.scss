@@ -1,0 +1,36 @@
+@use '@/shared/scss/index' as helpers;
+
+
+.services {
+
+  margin: 0 auto;
+  margin-bottom: 200px;
+  padding: 0 20px;
+
+  @include helpers.breakpoint(lg) {
+    padding: 0 40px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--black);
+    margin-bottom: 200px;
+    gap: 16.5px;
+
+    .title {
+      font-weight: 700;
+      font-size: 70px;
+      margin: 0;
+      line-height: 46px;
+    }
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+  }
+}

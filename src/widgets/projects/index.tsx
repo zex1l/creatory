@@ -1,3 +1,4 @@
+'use client'
 import { ArrowCircleIcon, Button, Slider } from '@/shared/ui';
 import css from './projects.module.scss';
 import { CardProject } from './ui/card/card';
@@ -21,6 +22,7 @@ export const Projects = () => {
             items={items}
             options={{
               slidesPerView: 1,
+              spaceBetween: 60,
             }}
             renderItem={(item) => (
               <SwiperSlide>

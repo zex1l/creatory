@@ -1,5 +1,4 @@
-'use client';
-import { Hero, Projects, MarqueeBlock } from '@/widgets';
+import { Hero, Projects, MarqueeBlock, Services } from '@/widgets';
 
 export const HomePage = () => {
   return (
@@ -7,6 +6,7 @@ export const HomePage = () => {
       <Hero />
       <Projects />
       <MarqueeBlock />
+      <Services />
     </>
   );
 };

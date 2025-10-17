@@ -14,13 +14,6 @@
     margin: 0 auto 100px auto;
   }
 
-  .container {
-    @include helpers.breakpoint(desktopM) {
-      max-width: 1360px;
-      margin: 0 auto;
-      overflow: hidden;
-    }
-  }
 
   .header {
     margin-bottom: 50px;

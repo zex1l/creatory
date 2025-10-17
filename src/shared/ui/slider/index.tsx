@@ -1,4 +1,5 @@
-import { Swiper, type SwiperProps, SwiperRef, SwiperSlide } from 'swiper/react';
+'use client';
+import { Swiper, type SwiperProps, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
 import { type SwiperOptions, type Swiper as SwiperType } from 'swiper/types';
 import 'swiper/css';
@@ -6,7 +7,7 @@ import css from './slider.module.scss';
 import cn from 'classnames';
 import { BtnNavigation } from './ui/btn-navigation/btn-navigation';
 import { useDomRefWithSetter } from './lib/use-dom-ref';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 
 type Props<T> = SwiperProps & {
   items: T[];
