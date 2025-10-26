@@ -69,7 +69,6 @@ export const useServiceItemTurn = (index: number) => {
   };
 
   const handleMouseLeave = () => {
-    console.log('dwadwa');
     timelineRef.current?.reverse();
   };
 

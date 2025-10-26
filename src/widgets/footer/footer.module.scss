@@ -1,0 +1,98 @@
+@use '@/shared/scss/index' as helpers;
+
+.footer {
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: var(--black100);
+
+  @include helpers.breakpoint(lg) {
+    padding: 60px 40px;
+  }
+
+  .content {
+    display: flex;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--black80);
+    margin-bottom: 50px;
+    flex-direction: column;
+
+    @include helpers.breakpoint(md) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+
+    .logo {
+      height: 55px;
+      width: 248px;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .icon {
+      width: 60px;
+      height: 60px;
+      min-width: 60px;
+    }
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+
+    &__link {
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 28px;
+      color: var(--white90);
+      transition: color 0.4s ease-out;
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+
+
+  }
+
+  .policy {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+
+    @include helpers.breakpoint(md) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__text {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 13px;
+      color: var(--gray90);
+    }
+
+    &__copyright {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 13px;
+      color: var(--white90);
+    }
+
+  }
+}

@@ -15,8 +15,6 @@ export const useCalcBallPosition = (pathname: string) => {
   useEffect(() => {
     const currentIndex = NAV_DATA.findIndex((item) => item.link === pathname);
 
-    console.log(currentIndex + 1);
-
     if (currentIndex !== -1) {
       setActiveIndex(currentIndex);
     }
