@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  padding: 0 20px;
+  background-color: transparent;
+  transition: background-color 0.4s ease-out;
+
+  &:hover {
+    background-color: var(--black90);
+
+    img {
+      filter:
+        brightness(0) saturate(100%) invert(58%) sepia(67%) saturate(486%) hue-rotate(87deg) brightness(93%) contrast(92%);
+    }
+  }
+
+  img {
+    position: static !important;
+    object-fit: contain;
+    height: auto !important;
+    width: auto !important;
+    transition: filter 0.4s ease-out;
+  }
+}
