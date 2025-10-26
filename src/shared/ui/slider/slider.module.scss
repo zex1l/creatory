@@ -1,0 +1,43 @@
+.swiper {
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    .navigation {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .nextBtn {
+        transform: rotate(180deg);
+      }
+
+      .nextBtn,
+      .prevBtn {
+        &:disabled {
+          background-color: #DFDFDF;
+          pointer-events: none;
+        }
+      }
+    }
+
+    .pagination {
+      display: flex;
+      align-items: center;
+
+      &__item {
+        font-size: 15px;
+        line-height: 100%;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+      }
+      
+    }
+  }
+
+
+
+}

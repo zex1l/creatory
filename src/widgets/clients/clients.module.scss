@@ -1,0 +1,50 @@
+@use '@/shared/scss/index' as helpers;
+
+.clients {
+  color: var(--white90);
+  margin-bottom: 200px;
+  padding: 60px 20px;
+  background-color: var(--black100);
+
+  @include helpers.breakpoint(lg) {
+    padding: 100px 40px;
+  }
+
+  .header {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--gray90);
+
+    .title {
+      line-height: 46px;
+      font-size: 70px;
+      font-weight: 700;
+    }
+  }
+
+  .list {
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+
+    @include helpers.breakpoint(md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include helpers.breakpoint(lg) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+  }
+
+  .sliderBtn {
+    &:disabled {
+      background-color: gray !important;
+      border: 1px solid gray !important;
+    }
+  }
+}

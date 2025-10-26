@@ -4,3 +4,5 @@ export { InstagramIcon } from './instagram';
 export { WhatsAppIcon } from './whatsapp';
 export { LogoIcon } from './logo/logo';
 export { ArrowCircleIcon } from './arrow-circle';
+export { LogoWithText } from './logo-with-text';
+export { FooterArrow } from './footer-arrow';

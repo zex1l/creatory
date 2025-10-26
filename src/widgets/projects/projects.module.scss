@@ -7,11 +7,13 @@
   background-color: var(--white);
   padding-top: 100px;
   padding: 100px 20px 100px 20px;
+  margin-bottom: 100px;
 
   @include helpers.breakpoint(desktopM) {
-    padding: 100px 40px 0 40px;
-    margin: 0 auto;
+    padding: 100px 40px 100px 40px;
+    margin: 0 auto 100px auto;
   }
+
 
   .header {
     margin-bottom: 50px;
@@ -19,9 +21,13 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--black);
 
     .title {
       line-height: 46px;
+      font-size: 70px;
+      font-weight: 700;
     }
   }
 

@@ -1,8 +1,8 @@
-import { useRef, useState } from 'react';
 import css from './card.module.scss';
 import Image from 'next/image';
 import cn from 'classnames';
 import { useTiltCard } from '../../lib/use-tilt-card';
+import Link from 'next/link';
 
 export type ProjectCardType = {
   title: string;
@@ -10,7 +10,7 @@ export type ProjectCardType = {
   desciption: string;
   tags: {
     title: string;
-    url: string;
+    link: string;
   }[];
 };
 
@@ -45,10 +45,10 @@ export const CardProject = ({ desciption, img, tags, title }: Props) => {
           <h3 className={css.title}>{title}</h3>
           <p className={css.description}>{desciption}</p>
           <div className={css.tags}>
-            {tags.map((tag) => (
-              <a key={tag.title} href={tag.url}>
+            {tags.map((tag, index) => (
+              <Link key={index} className={css.tag} href={tag.link}>
                 {tag.title}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

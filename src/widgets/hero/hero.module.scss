@@ -9,6 +9,7 @@
   padding-top: 169px;
   z-index: var(--z-index-hero);
   padding-bottom: 59px;
+  cursor: none;
 
   &::after {
     content: "";
@@ -28,8 +29,6 @@
     width: 100%;
     object-fit: cover;
     z-index: -1;
-
-
   }
 
   .wrapper {
@@ -81,6 +80,7 @@
 
   .btn {
     margin-bottom: 105px;
+    cursor: none;
   }
 
   .logo {

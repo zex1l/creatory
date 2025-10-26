@@ -1,0 +1,44 @@
+@use '@/shared/scss/index' as helpers;
+
+.card {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &:hover {
+    .picture {
+      >img {
+        transform: scale(1.1);
+      }
+    }
+
+    .title {
+      color: var(--primary);
+    }
+  }
+
+  .picture {
+    position: relative;
+    padding-top: 56%;
+    overflow: hidden;
+
+    >img {
+      object-fit: cover;
+      transition: transform 1.2s var(--ease);
+    }
+  }
+
+  .title {
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--black90);
+    margin: 0;
+    font-weight: 600;
+    transition: color 0.4s var(--ease);
+
+  }
+
+}

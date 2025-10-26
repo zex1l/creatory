@@ -1,12 +1,8 @@
 import type { Metadata } from 'next';
-import { Raleway } from 'next/font/google';
 import './globals.css';
 import { MainProvider } from '@/shared/providers/main.provider';
-
-// const ralewayFont = Raleway({
-//   variable: '--font-raleway-sans',
-//   subsets: ['latin'],
-// });
+import '@/shared/scss/swiper.scss';
+import { Footer, Header } from '@/widgets';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -23,13 +19,17 @@ export default function RootLayout({
       <head>
         <style>
           @import
-          url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+          url(&quot;https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap&quot;);
         </style>
       </head>
       <body>
         <MainProvider>
+          <Header />
           <div className="wrapper">
-            <div id='smooth-content'>{children}</div>
+            <div id="smooth-content">
+              {children}
+              <Footer />
+            </div>
           </div>
         </MainProvider>
       </body>
