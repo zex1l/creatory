@@ -23,7 +23,7 @@ export const Projects = () => {
               slidesPerView: 1,
               spaceBetween: 60,
             }}
-            renderItem={(item) => (
+            renderItem={() => (
               <div className={css.blocks}>
                 {data.map((item, index) => {
                   return <CardProject {...item} key={index} />;

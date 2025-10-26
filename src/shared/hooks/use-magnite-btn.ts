@@ -22,7 +22,7 @@ export const useMagniteBtn = (activeMagnite: boolean) => {
 
     if (!boundingRect) return;
 
-    const magnet = {
+    const magnet: MagniteType = {
       powerDistance,
       width: boundingRect?.width || 0,
       height: boundingRect?.height || 0,
@@ -49,8 +49,8 @@ export const useMagniteBtn = (activeMagnite: boolean) => {
     const magnet = magniteInit();
     if (!magnet) return;
 
-    let target = { x: 0, y: 0 };
-    let current = { x: 0, y: 0 };
+    const target = { x: 0, y: 0 };
+    const current = { x: 0, y: 0 };
 
     const smoothFollow = () => {
       current.x += (target.x - current.x) * 0.15;

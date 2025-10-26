@@ -1,5 +1,5 @@
 'use client';
-import { ButtonHTMLAttributes, useEffect, useRef, useState } from 'react';
+import { ButtonHTMLAttributes } from 'react';
 import css from './button.module.scss';
 import Link from 'next/link';
 import cn from 'classnames';
@@ -7,7 +7,6 @@ import cn from 'classnames';
 import { useMagniteBtn } from '@/shared/hooks/use-magnite-btn';
 
 export const Button = ({
-  attraction,
   className,
   asLink,
   to,
@@ -24,7 +23,7 @@ export const Button = ({
         style={{
           transition: 'transform 0.6s cubic-bezier(0.075, 0.82, 0.165, 1)',
         }}
-        //@ts-ignore
+        //@ts-expect-error error
         ref={btnRef}
         href={to}
         className={btnClassName}
@@ -35,7 +34,7 @@ export const Button = ({
   }
 
   return (
-    //@ts-ignore
+    //@ts-expect-error error
     <button ref={btnRef} className={btnClassName} {...props}>
       {children}
     </button>
@@ -43,7 +42,6 @@ export const Button = ({
 };
 
 type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
-  attraction?: boolean;
   asLink?: boolean;
   to?: string;
   activeMagnite?: boolean;

@@ -1,4 +1,3 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
 import css from './about-slider.module.scss';
 import { GreenStar } from '@/shared/ui/icons/green-star';
 

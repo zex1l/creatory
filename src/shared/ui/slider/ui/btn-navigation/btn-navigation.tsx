@@ -28,3 +28,5 @@ export const BtnNavigation = forwardRef<HTMLButtonElement, Props>(
     );
   }
 );
+
+BtnNavigation.displayName = 'BtnNavigation';

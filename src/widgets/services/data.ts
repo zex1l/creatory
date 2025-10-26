@@ -1,4 +1,3 @@
-import { ArrowCircleIcon } from '@/shared/ui';
 import { StarIcon } from './ui/star-icon';
 import { StarIcon3 } from './ui/star-icon3';
 import { StarIcon2 } from './ui/star-icon2';

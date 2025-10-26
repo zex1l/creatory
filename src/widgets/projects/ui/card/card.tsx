@@ -1,4 +1,3 @@
-import { useRef, useState } from 'react';
 import css from './card.module.scss';
 import Image from 'next/image';
 import cn from 'classnames';

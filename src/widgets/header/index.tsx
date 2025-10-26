@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import css from './header.module.scss';
 import { Logo } from './ui/logo/logo';
 import { MenuBtn } from './ui/menu-btn/menu-btn';

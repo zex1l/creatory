@@ -1,5 +1,4 @@
 import {
-  ArrowCircleIcon,
   BehanceIcon,
   FooterArrow,
   InstagramIcon,

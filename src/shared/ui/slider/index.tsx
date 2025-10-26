@@ -1,7 +1,7 @@
 'use client';
 import { Swiper, type SwiperProps, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
-import { type SwiperOptions, type Swiper as SwiperType } from 'swiper/types';
+import { type SwiperOptions } from 'swiper/types';
 import 'swiper/css';
 import css from './slider.module.scss';
 import cn from 'classnames';
@@ -18,7 +18,7 @@ type Props<T> = SwiperProps & {
   nextBtnClassName?: string;
 };
 
-export const Slider = <T, _>({
+export const Slider = <T,>({
   options,
   items,
   renderItem,

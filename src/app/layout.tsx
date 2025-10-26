@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { Raleway } from 'next/font/google';
 import './globals.css';
 import { MainProvider } from '@/shared/providers/main.provider';
 import '@/shared/scss/swiper.scss';
@@ -20,7 +19,7 @@ export default function RootLayout({
       <head>
         <style>
           @import
-          url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+          url(&quot;https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap&quot;);
         </style>
       </head>
       <body>
