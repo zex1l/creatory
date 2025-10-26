@@ -5,3 +5,4 @@ export { MarqueeBlock } from './marquee-block';
 export { Services } from './services';
 export { Header } from './header';
 export { Clients } from './clients';
+export { News } from './news';

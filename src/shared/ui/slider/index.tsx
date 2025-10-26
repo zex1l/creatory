@@ -12,7 +12,7 @@ import { useState } from 'react';
 type Props<T> = SwiperProps & {
   items: T[];
   options?: SwiperOptions;
-  renderItem: (item: T) => React.ReactNode;
+  renderItem: (item: T, index: number) => React.ReactNode;
   slideClassName?: string;
   prevBtnClassName?: string;
   nextBtnClassName?: string;
@@ -76,7 +76,7 @@ export const Slider = <T, _>({
       >
         {items.map((item, index) => (
           <SwiperSlide className={slideClassName} key={index}>
-            {renderItem(item)}
+            {renderItem(item, index)}
           </SwiperSlide>
         ))}
       </Swiper>

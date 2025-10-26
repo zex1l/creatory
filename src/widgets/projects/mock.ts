@@ -10,15 +10,15 @@ export const data: ProjectCardType[] = [
     tags: [
       {
         title: 'Корпоративные сайты',
-        url: 'https://react.dev/',
+        link: 'https://react.dev/',
       },
       {
         title: 'Брендинг',
-        url: 'https://www.typescriptlang.org/',
+        link: 'https://www.typescriptlang.org/',
       },
       {
         title: 'Digital-айдентика',
-        url: 'https://nextjs.org/',
+        link: 'https://nextjs.org/',
       },
     ],
   },
@@ -29,15 +29,15 @@ export const data: ProjectCardType[] = [
     tags: [
       {
         title: 'Корпоративные сайты',
-        url: 'https://react.dev/',
+        link: 'https://react.dev/',
       },
       {
         title: 'Брендинг',
-        url: 'https://www.typescriptlang.org/',
+        link: 'https://www.typescriptlang.org/',
       },
       {
         title: 'Digital-айдентика',
-        url: 'https://nextjs.org/',
+        link: 'https://nextjs.org/',
       },
     ],
   },
@@ -48,15 +48,15 @@ export const data: ProjectCardType[] = [
     tags: [
       {
         title: 'Корпоративные сайты',
-        url: 'https://react.dev/',
+        link: 'https://react.dev/',
       },
       {
         title: 'Брендинг',
-        url: 'https://www.typescriptlang.org/',
+        link: 'https://www.typescriptlang.org/',
       },
       {
         title: 'Digital-айдентика',
-        url: 'https://nextjs.org/',
+        link: 'https://nextjs.org/',
       },
     ],
   },
@@ -67,15 +67,15 @@ export const data: ProjectCardType[] = [
     tags: [
       {
         title: 'Корпоративные сайты',
-        url: 'https://react.dev/',
+        link: 'https://react.dev/',
       },
       {
         title: 'Брендинг',
-        url: 'https://www.typescriptlang.org/',
+        link: 'https://www.typescriptlang.org/',
       },
       {
         title: 'Digital-айдентика',
-        url: 'https://nextjs.org/',
+        link: 'https://nextjs.org/',
       },
     ],
   },
@@ -86,15 +86,15 @@ export const data: ProjectCardType[] = [
     tags: [
       {
         title: 'Корпоративные сайты',
-        url: 'https://react.dev/',
+        link: 'https://react.dev/',
       },
       {
         title: 'Брендинг',
-        url: 'https://www.typescriptlang.org/',
+        link: 'https://www.typescriptlang.org/',
       },
       {
         title: 'Digital-айдентика',
-        url: 'https://nextjs.org/',
+        link: 'https://nextjs.org/',
       },
     ],
   },
@@ -105,15 +105,15 @@ export const data: ProjectCardType[] = [
     tags: [
       {
         title: 'Корпоративные сайты',
-        url: 'https://react.dev/',
+        link: 'https://react.dev/',
       },
       {
         title: 'Брендинг',
-        url: 'https://www.typescriptlang.org/',
+        link: 'https://www.typescriptlang.org/',
       },
       {
         title: 'Digital-айдентика',
-        url: 'https://nextjs.org/',
+        link: 'https://nextjs.org/',
       },
     ],
   },
