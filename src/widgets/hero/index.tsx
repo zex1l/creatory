@@ -11,7 +11,7 @@ import css from './hero.module.scss';
 
 export const Hero = () => {
   return (
-    <section data-speed="0.6" className={css.hero}>
+    <section data-speed="0.6" className={css.hero} id="hero-section">
       <video className={css.video} autoPlay muted loop playsInline>
         <source src="/hero-video.mp4" type="video/mp4" />
       </video>

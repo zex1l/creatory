@@ -3,6 +3,7 @@ import { Raleway } from 'next/font/google';
 import './globals.css';
 import { MainProvider } from '@/shared/providers/main.provider';
 import '@/shared/scss/swiper.scss';
+import { Header } from '@/widgets';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -24,6 +25,7 @@ export default function RootLayout({
       </head>
       <body>
         <MainProvider>
+          <Header />
           <div className="wrapper">
             <div id='smooth-content'>{children}</div>
           </div>

@@ -1,5 +1,6 @@
 :root {
   --white: #fff;
+  --white90: #F9F9F9;
   --black: #141414;
   --gray: #C4C4C4;
   --gray90: #3D3D3D;
@@ -9,6 +10,8 @@
   --primary: #54D084 --z-index-hero: 1;
   --z-index-projects: 2;
   --primary: #54D084;
+
+  --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 
@@ -85,4 +88,18 @@ p {
   top: 0;
   transform-origin: 50% 50%;
   transform: translateZ(2.5rem) rotateX(-180deg);
+}
+
+ul li {
+  list-style: none;
+}
+
+ol li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
 }

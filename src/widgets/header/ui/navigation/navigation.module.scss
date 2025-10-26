@@ -1,0 +1,61 @@
+@use '@/shared/scss/index' as helpers;
+
+
+.navigation {
+  display: none;
+  position: relative;
+  opacity: 1;
+  pointer-events: all;
+  transition: all 0.4s ease-out;
+
+
+  @include helpers.breakpoint(md) {
+    display: block;
+  }
+
+  &.open {
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease-in;
+  }
+
+  .list {
+    display: grid;
+
+
+    .link {
+      display: block;
+    }
+
+    .item {
+      padding: 5px 20px;
+      list-style: none;
+      font-size: 13px;
+      color: var(--gray90);
+      line-height: 9px;
+      transition: color 0.4s ease-out;
+      text-align: center;
+
+      &:hover {
+        color: var(--white90);
+      }
+
+      &.active {
+        color: var(--white90);
+      }
+    }
+  }
+
+
+  .ball {
+    width: 3px;
+    height: 3px;
+    background-color: var(--white90);
+    border: none;
+    border-radius: 7px;
+    transition: .3s ease-in-out;
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+  }
+}
