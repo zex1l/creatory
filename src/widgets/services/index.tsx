@@ -12,7 +12,7 @@ export const Services = () => {
     <section className={css.services}>
       <div className={css.header}>
         <h2 className={css.title}>Services</h2>
-        <Button>
+        <Button activeMagnite>
           Все услуги <ArrowCircleIcon />
         </Button>
       </div>

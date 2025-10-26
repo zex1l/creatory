@@ -3,6 +3,10 @@
   overflow: hidden;
   white-space: nowrap;
 
+  .marquee {
+    overflow: hidden;
+  }
+
 
   .item {
     display: flex;

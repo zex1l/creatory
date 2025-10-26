@@ -12,7 +12,7 @@ export const Projects = () => {
       <div className={css.container}>
         <div className={css.header}>
           <h2 className={css.title}>Made by Creatory</h2>
-          <Button>
+          <Button activeMagnite>
             Все кейсы <ArrowCircleIcon />
           </Button>
         </div>

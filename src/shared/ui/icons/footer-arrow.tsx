@@ -18,7 +18,7 @@ export const FooterArrow = ({ className, ...props }: Props) => {
       <path
         d="M21.0616 12.8356L11.2438 2.85254M11.2438 2.85254L1.42603 12.8356M11.2438 2.85254L11.2438 26.8525H49.426"
         stroke="#54D084"
-        stroke-width="4"
+        strokeWidth="4"
       />
     </svg>
   );

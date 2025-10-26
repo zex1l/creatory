@@ -8,6 +8,7 @@ import {
   ArrowCircleIcon,
 } from '@/shared/ui';
 import css from './hero.module.scss';
+import { Cursor } from '@/shared/ui/cursor';
 
 export const Hero = () => {
   return (
@@ -30,7 +31,7 @@ export const Hero = () => {
             <p className={css.description}>не для всех, но для лучших</p>
           </div>
         </div>
-        <Button className={css.btn} asLink to="/">
+        <Button activeMagnite className={css.btn} asLink to="/">
           Обсудить проект <ArrowCircleIcon />
         </Button>
 
@@ -38,6 +39,7 @@ export const Hero = () => {
           <LogoIcon />
         </div>
       </div>
+      <Cursor />
     </section>
   );
 };

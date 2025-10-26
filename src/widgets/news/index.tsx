@@ -9,7 +9,7 @@ export const News = () => {
     <section className={css.news}>
       <div className={css.header}>
         <h2 className={css.title}>Creatory News</h2>
-        <Button>
+        <Button activeMagnite>
           Все новости
           <ArrowCircleIcon />
         </Button>

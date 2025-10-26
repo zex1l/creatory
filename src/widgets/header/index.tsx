@@ -17,6 +17,8 @@ export const Header = () => {
       className={cn(css.header, {
         [css.hidden]: !headerVisible,
         [css.background]: !isTransparent,
+        [css.transparent]: isTransparent,
+        [css.open]: open,
       })}
     >
       <Logo className={css.logo} />

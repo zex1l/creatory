@@ -22,6 +22,8 @@ export const useScrollHeader = () => {
       const currentScroll = document.documentElement.scrollTop;
 
       if (currentScroll < 60) setHeaderVisible(true);
+      else if (document.body.hasAttribute('data-body-scroll-fix'))
+        setHeaderVisible(true);
       else {
         setHeaderVisible(
           currentScroll <= lastScroll.current || lastScroll.current === 0

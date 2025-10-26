@@ -18,4 +18,32 @@
   &.background {
     background-color: var(--black);
   }
+
+
+
+  &.transparent {
+    cursor: none;
+
+    a {
+      cursor: none;
+    }
+
+    button {
+      cursor: none;
+    }
+  }
+
+  &.open {
+    cursor: initial;
+
+    a {
+      cursor: pointer;
+    }
+
+    button {
+      cursor: pointer;
+    }
+  }
+
+
 }
