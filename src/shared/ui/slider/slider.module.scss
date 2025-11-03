@@ -17,9 +17,19 @@
 
       .nextBtn,
       .prevBtn {
+        transition: all 0.4s ease-out;
+
         &:disabled {
           background-color: #DFDFDF;
           pointer-events: none;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+
+        &:hover {
+          opacity: 0.8;
         }
       }
     }
@@ -34,7 +44,7 @@
         font-weight: 600;
         letter-spacing: 0.01em;
       }
-      
+
     }
   }
 

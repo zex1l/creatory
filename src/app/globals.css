@@ -10,9 +10,9 @@
   --gray80: #C4C4C4;
   --background: #fff;
   --foreground: #000;
-  --primary: #54D084 --z-index-hero: 1;
-  --z-index-projects: 2;
   --primary: #54D084;
+  --z-index-hero: 1;
+  --z-index-projects: 2;
 
   --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
@@ -26,7 +26,7 @@ body {
 
 body {
   color: var(--foreground);
-  background: var(--background); 
+  background: var(--background);
   font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -105,4 +105,5 @@ button {
   cursor: pointer;
   border: none;
   background: none;
+  width: fit-content;
 }

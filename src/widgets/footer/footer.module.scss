@@ -45,6 +45,21 @@
       width: 60px;
       height: 60px;
       min-width: 60px;
+      color: var(--gray90);
+      transition: color 0.3s ease-out;
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+
+    .btn__top {
+      color: var(--primary);
+      transition: opacity 0.3s ease-out;
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 
@@ -59,6 +74,7 @@
       line-height: 28px;
       color: var(--white90);
       transition: color 0.4s ease-out;
+      text-align: end;
 
       &:hover {
         color: var(--primary);

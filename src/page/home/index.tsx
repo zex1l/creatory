@@ -5,6 +5,7 @@ import {
   Services,
   Clients,
   News,
+  SloganBlock,
 } from '@/widgets';
 
 export const HomePage = () => {
@@ -14,6 +15,7 @@ export const HomePage = () => {
       <Projects />
       <MarqueeBlock />
       <Services />
+      <SloganBlock />
       <Clients />
       <News />
     </>

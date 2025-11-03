@@ -1,0 +1,53 @@
+.title {
+  font-size: 120px;
+  line-height: 100%;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 50px;
+
+  span {
+    display: inline-block;
+    line-height: 100%;
+    color: var(--primary);
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    padding-right: 5px;
+
+
+    vertical-align: bottom;
+
+    // caret for text animation
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   right: 0;
+    //   top: 50%;
+    //   width: 1px;
+    //   height: calc(100% - 30px);
+    //   transform: translateY(-50%);
+    //   border-right: 5px solid var(--primary);
+
+    //   animation: caret 1s infinite;
+    // }
+
+    &.printedText {
+      animation: printed_text 1s steps(20) forwards;
+    }
+  }
+
+}
+
+@keyframes caret {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
