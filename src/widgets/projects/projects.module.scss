@@ -3,7 +3,7 @@
 .projects {
 
   position: relative;
-  z-index: var(--z-index-prjects);
+  z-index: var(--z-index-projects);
   background-color: var(--white);
   padding-top: 100px;
   padding: 100px 20px 100px 20px;
@@ -28,6 +28,7 @@
       line-height: 46px;
       font-size: 70px;
       font-weight: 700;
+      font-family: var(--font-wremena), sans-serif;
     }
   }
 

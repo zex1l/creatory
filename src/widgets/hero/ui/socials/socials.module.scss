@@ -1,0 +1,25 @@
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+
+  &:hover {
+    .icon {
+      color: var(--gray90);
+    }
+  }
+
+  .icon {
+    color: var(--white);
+    transition: color 0.3s ease-out;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--white);
+    }
+
+
+
+  }
+}

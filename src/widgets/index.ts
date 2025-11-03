@@ -7,3 +7,4 @@ export { Header } from './header';
 export { Clients } from './clients';
 export { News } from './news';
 export { Footer } from './footer';
+export { SloganBlock } from './slogan-block';

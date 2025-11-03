@@ -3,12 +3,20 @@ import { Button, ArrowCircleIcon, Slider } from '@/shared/ui';
 import css from './news.module.scss';
 import { NewsCard } from './ui/news-card/news-card';
 import { ITEMS_DATA } from './data';
+import { useAnimateTitle } from '@/shared/hooks/use-animate-title';
+import { useRef } from 'react';
 
 export const News = () => {
+  const refTitle = useRef<HTMLHeadingElement>(null);
+
+  useAnimateTitle({ ref: refTitle });
+
   return (
     <section className={css.news}>
       <div className={css.header}>
-        <h2 className={css.title}>Creatory News</h2>
+        <h2 ref={refTitle} className={css.title}>
+          Creatory News
+        </h2>
         <Button activeMagnite>
           Все новости
           <ArrowCircleIcon />

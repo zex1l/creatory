@@ -4,14 +4,21 @@ import { data } from './data';
 import css from './services.module.scss';
 import { useServiceScroll } from './lib/use-service-scroll';
 import { ItemService } from './ui/service-item/service-item';
+import { useRef } from 'react';
+import { useAnimateTitle } from '@/shared/hooks/use-animate-title';
 
 export const Services = () => {
-  const { activeIndex, addToItems, itemListRef, } = useServiceScroll();
+  const refTitle = useRef<HTMLHeadingElement>(null);
+
+  const { activeIndex, addToItems, itemListRef } = useServiceScroll();
+  useAnimateTitle({ ref: refTitle });
 
   return (
     <section className={css.services}>
       <div className={css.header}>
-        <h2 className={css.title}>Services</h2>
+        <h2 ref={refTitle} className={css.title}>
+          Services
+        </h2>
         <Button activeMagnite>
           Все услуги <ArrowCircleIcon />
         </Button>

@@ -3,12 +3,13 @@ import { Slider } from '@/shared/ui';
 import css from './clients.module.scss';
 import { ClientCard } from './ui/client-card/client-card';
 import { ITEMS_DATA } from './data';
+import { ClientsTitle } from './ui/clients-title/clients-title';
 
 export const Clients = () => {
   return (
     <section className={css.clients}>
       <div className={css.header}>
-        <h2 className={css.title}>Clients</h2>
+        <ClientsTitle />
       </div>
       <div className={css.content}>
         <Slider

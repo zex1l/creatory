@@ -19,11 +19,6 @@
     padding-bottom: 50px;
     border-bottom: 1px solid var(--gray90);
 
-    .title {
-      line-height: 46px;
-      font-size: 70px;
-      font-weight: 700;
-    }
   }
 
   .list {
@@ -42,9 +37,14 @@
   }
 
   .sliderBtn {
+    background-color: var(--black80) !important;
+    border: 1px solid var(--black80) !important;
+    color: var(--white);
+
     &:disabled {
-      background-color: gray !important;
-      border: 1px solid gray !important;
+      background-color: var(--black100) !important;
+      border: 1px solid var(--gray90) !important;
+      color: var(--gray90) !important;
     }
   }
 }

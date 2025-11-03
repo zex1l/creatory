@@ -9,6 +9,9 @@ import {
 } from '@/shared/ui';
 import css from './hero.module.scss';
 import { Cursor } from '@/shared/ui/cursor';
+import Link from 'next/link';
+import { HeroTitle } from './ui/title/hero-title';
+import { Socials } from './ui/socials/socials';
 
 export const Hero = () => {
   return (
@@ -18,16 +21,9 @@ export const Hero = () => {
       </video>
       <div className={css.wrapper}>
         <div className={css.content__wrapper}>
-          <div className={css.socials}>
-            <TelegramIcon />
-            <WhatsAppIcon />
-            <InstagramIcon />
-            <BehanceIcon />
-          </div>
+          <Socials />
           <div className={css.content}>
-            <h1 className={css.title}>
-              Digital веб-студия для <span>бизнеса</span>
-            </h1>
+            <HeroTitle />
             <p className={css.description}>не для всех, но для лучших</p>
           </div>
         </div>
@@ -39,7 +35,6 @@ export const Hero = () => {
           <LogoIcon />
         </div>
       </div>
-      <Cursor />
     </section>
   );
 };

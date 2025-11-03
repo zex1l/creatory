@@ -3,15 +3,22 @@ import { ArrowCircleIcon, Button, Slider } from '@/shared/ui';
 import css from './projects.module.scss';
 import { CardProject } from './ui/card/card';
 import { data } from './mock';
+import { useAnimateTitle } from '@/shared/hooks/use-animate-title';
+import { useRef } from 'react';
 
 export const Projects = () => {
+  const titleRef = useRef<HTMLHeadingElement>(null);
+
   const items = new Array(2).fill(null);
+  useAnimateTitle({ ref: titleRef });
 
   return (
-    <div className={css.projects}>
+    <section className={css.projects}>
       <div className={css.container}>
         <div className={css.header}>
-          <h2 className={css.title}>Made by Creatory</h2>
+          <h2 ref={titleRef} className={css.title}>
+            Made by Creatory
+          </h2>
           <Button activeMagnite>
             Все кейсы <ArrowCircleIcon />
           </Button>
@@ -33,6 +40,6 @@ export const Projects = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };

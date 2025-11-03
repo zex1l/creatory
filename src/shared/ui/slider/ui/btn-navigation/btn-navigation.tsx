@@ -20,7 +20,7 @@ export const BtnNavigation = forwardRef<HTMLButtonElement, Props>(
         >
           <path
             d="M18.8 8.0001L1.2 8.0001M1.2 8.0001L7.8 14.6001M1.2 8.0001L7.8 1.4001"
-            stroke="#3D3D3D"
+            stroke="currentColor"
             strokeWidth="1.5"
           />
         </svg>
