@@ -19,11 +19,12 @@ type Props = ProjectCardType;
 export const CardProject = ({ desciption, img, tags, title }: Props) => {
   const {
     cardRef,
-    setClosing,
+
     closing,
     handleMouseLeave,
     handleMouseMove,
     open,
+    handleTransitionEnd,
   } = useTiltCard();
 
   return (
@@ -32,11 +33,11 @@ export const CardProject = ({ desciption, img, tags, title }: Props) => {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       className={css.card}
-      onAnimationEnd={() => setClosing(false)}
     >
       <Image className={css.img} src={img} alt={title} fill />
-      {open && (
+      {
         <div
+          onTransitionEnd={handleTransitionEnd}
           className={cn(css.overlay, {
             [css.open]: open,
             [css.closing]: closing,
@@ -52,7 +53,7 @@ export const CardProject = ({ desciption, img, tags, title }: Props) => {
             ))}
           </div>
         </div>
-      )}
+      }
     </div>
   );
 };

@@ -4,18 +4,25 @@ export const useTiltCard = () => {
   const [open, setOpen] = useState(false);
   const [closing, setClosing] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
+
   const onOpen = () => {
-    setClosing(false);
-    setOpen(true);
+    if (!open) {
+      setClosing(false);
+      setOpen(true);
+    }
   };
 
   const onClose = () => {
-    setClosing(true);
+    if (open && !closing) {
+      setClosing(true);
+    }
+  };
 
-    timerRef.current = setTimeout(() => {
+  const handleTransitionEnd = () => {
+    if (closing) {
       setOpen(false);
-    }, 300);
+      setClosing(false);
+    }
   };
 
   const handleMouseMove = (e: React.MouseEvent) => {
@@ -57,15 +64,6 @@ export const useTiltCard = () => {
     });
   };
 
-  useEffect(
-    () => () => {
-      if (timerRef.current) {
-        clearTimeout(timerRef.current);
-      }
-    },
-    []
-  );
-
   return {
     open,
     closing,
@@ -73,5 +71,6 @@ export const useTiltCard = () => {
     setClosing,
     handleMouseMove,
     handleMouseLeave,
+    handleTransitionEnd,
   };
 };

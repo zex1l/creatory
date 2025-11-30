@@ -2,6 +2,7 @@
 import { useEffect, useRef } from 'react';
 import css from './slogan-block.module.scss';
 import cn from 'classnames';
+import { useAnimateTitle } from '@/shared/hooks/use-animate-title';
 
 export const SloganBlock = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -38,14 +39,31 @@ export const SloganBlock = () => {
   return (
     <section ref={ref} className={css.slogan}>
       <div className={cn(css.slogan__item, css.first)}>
-        <p className={cn(css.text, css.left)}>не для всех</p>
+        <TextBlock text="не для всех" className={css.left} />
         <ArrowGreen className={css.arrow__right} />
       </div>
       <div className={cn(css.slogan__item, css.second)}>
-        <p className={cn(css.text, css.right)}>но для лучших</p>
+        <TextBlock text="но для лучших" className={css.right} />
         <ArrowGreen className={css.arrow__left} />
       </div>
     </section>
+  );
+};
+
+const TextBlock = ({
+  text,
+  className,
+}: {
+  text: string;
+  className?: string;
+}) => {
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  useAnimateTitle({ ref: titleRef });
+
+  return (
+    <p ref={titleRef} className={cn(css.text, className)}>
+      {text}
+    </p>
   );
 };
 
