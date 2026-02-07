@@ -1,0 +1,50 @@
+@use '@/shared/scss/index' as helpers;
+
+.inputWrapper {
+  height: 59px;
+  border-bottom: 1px solid var(--black80);
+  padding-top: 19px;
+  position: relative;
+
+  .label {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--gray80);
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 0;
+    transition: all 0.2s ease-out;
+    cursor: text;
+
+    &.focused {
+      font-size: 18px;
+      line-height: 13px;
+      top: 0;
+      cursor: initial;
+    }
+  }
+
+  .input {
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 30px;
+    font-size: 22px;
+    color: var(--black90);
+    background-color: transparent;
+  }
+
+  &.error {
+
+    border-color: var(--red);
+
+    .label {
+      color: var(--red);
+    }
+
+    .input {
+      color: var(--red);
+    }
+  }
+}

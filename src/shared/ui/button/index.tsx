@@ -12,6 +12,7 @@ export const Button = ({
   to,
   children,
   activeMagnite = false,
+  distanceMagnite,
   ...props
 }: Props) => {
   const btnClassName = cn(css.button, className);
@@ -45,4 +46,5 @@ type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
   asLink?: boolean;
   to?: string;
   activeMagnite?: boolean;
+  distanceMagnite?: number;
 };

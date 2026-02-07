@@ -19,7 +19,7 @@ export const Services = () => {
         <h2 ref={refTitle} className={css.title}>
           Services
         </h2>
-        <Button activeMagnite>
+        <Button>
           Все услуги <ArrowCircleIcon />
         </Button>
       </div>

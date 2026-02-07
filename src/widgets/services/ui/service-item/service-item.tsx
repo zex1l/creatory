@@ -21,16 +21,16 @@ export const ItemService = ({
         <span>/0{index + 1}</span>
       </div>
       <div className={css.item__content}>
-        <div className={css.item__header}>
+        <div
+          className={css.item__header}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           <Icon
             className={css.item__icon}
             color={isActive ? '#141414' : '#C4C4C4'}
           />
-          <h3
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            className={css.item__title}
-          >
+          <h3 className={css.item__title}>
             <div className={css.item__title_chars} id={`title${index}`}>
               {title}
             </div>

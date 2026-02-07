@@ -27,7 +27,7 @@ export const Hero = () => {
             <p className={css.description}>не для всех, но для лучших</p>
           </div>
         </div>
-        <Button activeMagnite className={css.btn} asLink to="/">
+        <Button className={css.btn} asLink to="/">
           Обсудить проект <ArrowCircleIcon />
         </Button>
 

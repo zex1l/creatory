@@ -8,3 +8,5 @@ export { Clients } from './clients';
 export { News } from './news';
 export { Footer } from './footer';
 export { SloganBlock } from './slogan-block';
+export { Team } from './team';
+export { CallbackForm } from './callback-form';

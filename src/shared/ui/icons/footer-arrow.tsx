@@ -9,16 +9,15 @@ export const FooterArrow = ({ className, ...props }: Props) => {
     <svg
       className={className}
       {...props}
-      xmlns="http://www.w3.org/2000/svg"
       width="50"
       height="29"
       viewBox="0 0 50 29"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M21.0616 12.8356L11.2438 2.85254M11.2438 2.85254L1.42603 12.8356M11.2438 2.85254L11.2438 26.8525H49.426"
-        stroke="currentColor"
-        strokeWidth="4"
+        d="M22.7486 11.492L19.8639 14.3111L13.397 7.77685V24.9796H50V29H9.35055V7.77783L2.88469 14.3111L0 11.492L11.3738 0L22.7486 11.492Z"
+        fill="#54D084"
       />
     </svg>
   );

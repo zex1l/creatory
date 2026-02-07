@@ -1,8 +1,9 @@
 import css from './card.module.scss';
 import Image from 'next/image';
 import cn from 'classnames';
-import { useTiltCard } from '../../lib/use-tilt-card';
+
 import Link from 'next/link';
+import { useTiltCard } from '@/shared/hooks/use-tilt-card';
 
 export type ProjectCardType = {
   title: string;
