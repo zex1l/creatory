@@ -17,9 +17,9 @@ export const Projects = () => {
       <div className={css.container}>
         <div className={css.header}>
           <h2 ref={titleRef} className={css.title}>
-            Made by Creatory
+            Made by CREAtory
           </h2>
-          <Button activeMagnite>
+          <Button>
             Все кейсы <ArrowCircleIcon />
           </Button>
         </div>

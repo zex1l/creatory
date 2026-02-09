@@ -45,4 +45,5 @@ type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
   asLink?: boolean;
   to?: string;
   activeMagnite?: boolean;
+  distanceMagnite?: number;
 };

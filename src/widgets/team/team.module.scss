@@ -1,0 +1,47 @@
+@use '@/shared/scss/index' as helpers;
+
+.team {
+  margin: 0 auto;
+  margin-bottom: 200px;
+  padding: 0 20px;
+
+  @include helpers.breakpoint(lg) {
+    padding: 0 40px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16.5px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid var(--black);
+
+    .title {
+      font-weight: 700;
+      font-size: 70px;
+      margin: 0;
+      line-height: 46px;
+      font-family: var(--font-wremena), sans-serif;
+
+    }
+  }
+
+  .blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include helpers.breakpoint(sm) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include helpers.breakpoint(lg) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+  }
+}

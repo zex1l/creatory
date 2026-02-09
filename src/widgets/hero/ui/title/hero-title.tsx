@@ -2,7 +2,7 @@
 
 import { useGSAP } from '@gsap/react';
 import css from './hero-title.module.scss';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { gsap } from 'gsap';
 
 const texts = ['бизнеса', 'человека', 'государства'];
@@ -40,7 +40,7 @@ export const HeroTitle = () => {
             if (el) el.textContent = text.slice(0, i + 1);
           },
         },
-        '+=0'
+        '+=0',
       );
     }
 
@@ -55,7 +55,7 @@ export const HeroTitle = () => {
             if (el) el.textContent = text.slice(0, i - 1);
           },
         },
-        '+=0'
+        '+=0',
       );
     }
 

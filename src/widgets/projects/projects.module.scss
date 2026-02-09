@@ -29,6 +29,17 @@
       font-size: 70px;
       font-weight: 700;
       font-family: var(--font-wremena), sans-serif;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -17px;
+        right: -30px;
+        width: 30px;
+        height: 30px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Cpath d='M-6.55671e-07 15L9.6967 9.6967L15 -6.55671e-07L20.3033 9.6967L30 15L20.3033 20.3033L15 30L9.6967 20.3033L-6.55671e-07 15Z' fill='%2354D084'/%3E%3C/svg%3E");
+      }
     }
   }
 
