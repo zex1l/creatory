@@ -4,6 +4,7 @@ import { IMaskInput } from 'react-imask';
 import { dataCountries, countryCodeList, ICountryData } from './data';
 import cn from 'classnames';
 import { usePhone } from './use-phone';
+import Image from 'next/image';
 
 type InputPhoneProps = {
   onChange: (e: React.FormEvent<HTMLInputElement>) => void;
@@ -64,7 +65,7 @@ const CountryPicker = ({
         className={css.countryPicker__current}
         onClick={() => setOpen(!open)}
       >
-        <img src={currentCountry.flag} alt="" />
+        <Image height={21} width={30} src={currentCountry.flag} alt="" />
         <svg
           className={cn(css.countryPicker__current_arrow, { [css.open]: open })}
           xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +89,12 @@ const CountryPicker = ({
               type="button"
               key={index}
             >
-              <img src={dataCountries[item].flag} alt="" />
+              <Image
+                height={21}
+                width={30}
+                src={dataCountries[item].flag}
+                alt=""
+              />
             </button>
           ))}
         </div>

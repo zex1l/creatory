@@ -1,15 +1,9 @@
 import {
-  TelegramIcon,
-  InstagramIcon,
-  BehanceIcon,
-  WhatsAppIcon,
   LogoIcon,
   Button,
   ArrowCircleIcon,
 } from '@/shared/ui';
 import css from './hero.module.scss';
-import { Cursor } from '@/shared/ui/cursor';
-import Link from 'next/link';
 import { HeroTitle } from './ui/title/hero-title';
 import { Socials } from './ui/socials/socials';
 

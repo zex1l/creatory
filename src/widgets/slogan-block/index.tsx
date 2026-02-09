@@ -72,18 +72,15 @@ const ArrowGreen = ({ className }: { className?: string }) => {
     <svg
       className={cn(css.arrow, className)}
       xmlns="http://www.w3.org/2000/svg"
-      width="985"
-      height="55"
-      viewBox="0 0 985 57"
+      width="1071"
+      height="57"
+      viewBox="0 0 1071 57"
       fill="none"
     >
       <path
-        d="M27.654 3.22656L6.54395 28.2266M6.54395 28.2266L27.654 53.2266M6.54395 28.2266H96.5439"
-        stroke="#54D084"
-        strokeWidth="10"
-        height={55}
+        d="M31.4658 6.45117L17.3076 23.2256H1070.54V33.2256H17.3076L31.4658 50L23.8242 56.4512L0 28.2256L23.8242 0L31.4658 6.45117Z"
+        fill="#54D084"
       />
-      <path d="M96.5439 28.2266H2097.54" stroke="#54D084" strokeWidth="10" />
     </svg>
   );
 };

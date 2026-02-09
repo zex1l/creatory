@@ -8,7 +8,7 @@
   @include helpers.breakpoint(lg) {
     padding: 0 40px;
     display: grid;
-    grid-template-columns: 64.8% 35.2%;
+    grid-template-columns: 64.8% 1fr;
     gap: 24px;
   }
 

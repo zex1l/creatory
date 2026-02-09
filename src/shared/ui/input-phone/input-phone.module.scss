@@ -1,6 +1,6 @@
 .inputWrapper {
   height: 59px;
-  border-bottom: 1px solid var(--black80);
+  border-bottom: 1px solid var(--gray80);
   padding-top: 19px;
   position: relative;
   display: flex;
@@ -16,6 +16,11 @@
     font-size: 22px;
     color: var(--black90);
     background-color: transparent;
+
+    font-weight: 500;
+    font-family: Raleway, "Raleway Fallback";
+    font-style: normal;
+    font-variant-numeric: lining-nums;
   }
 
   &.error {

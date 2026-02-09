@@ -3,7 +3,6 @@
 import { Button, Input, InputPhone, LogoIcon, TextArea } from '@/shared/ui';
 import css from './callback-form.module.scss';
 import { Controller, useForm } from 'react-hook-form';
-import { StarIcon3 } from '../services/ui/star-icon3';
 import Link from 'next/link';
 
 type CallbackFormSchema = {
@@ -107,12 +106,18 @@ export const CallbackForm = () => {
 
         <Button className={css.button} distanceMagnite={1} type="submit">
           Отправить заявку{' '}
-          <StarIcon3
-            color="#FFFFFF"
-            width={20}
-            height={20}
-            style={{ transform: 'rotate(45deg)' }}
-          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+          >
+            <path
+              d="M-4.37114e-07 10L6.46447 6.46447L10 -4.37114e-07L13.5355 6.46447L20 10L13.5355 13.5355L10 20L6.46447 13.5355L-4.37114e-07 10Z"
+              fill="white"
+            />
+          </svg>
         </Button>
         <p className={css.agreement}>
           *Нажимая на кнопку, вы даете согласие на
